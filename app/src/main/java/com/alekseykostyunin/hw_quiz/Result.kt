@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.alekseykostyunin.hw_quiz.Poll.Companion.TAG_RESULT
 import com.alekseykostyunin.hw_quiz.databinding.FragmentResultBinding
 
 class Result : Fragment() {
@@ -25,7 +26,7 @@ class Result : Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val result = arguments?.getInt("result").toString()
+        val result = arguments?.getInt(TAG_RESULT).toString()
         binding.textResult.text = result + " из 3"
         binding.toWelcome.setOnClickListener {
             findNavController().navigate(R.id.action_result_to_welcome)

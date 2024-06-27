@@ -21,7 +21,8 @@
 
         <action
             android:id="@+id/action_poll_to_result"
-            app:destination="@id/result" />
+            app:destination="@id/result"
+            app:popUpTo="@id/welcome" />
         <action
             android:id="@+id/action_poll_to_welcome"
             app:destination="@id/welcome"
@@ -39,7 +40,7 @@
             app:popUpTo="@id/welcome"
             />
         <argument
-            android:name="result"
+            android:name="TAG_RESULT"
             app:argType="integer" />
 
     </fragment>

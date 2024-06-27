@@ -17,10 +17,11 @@
     <string name="answer_2_2">1997</string>
     <string name="answer_2_3">1998</string>
 
-    <string name="question_3">В каком году вышел Аватар?</string>
+    <string name="question_3">В каком году вышел фильм Аватар?</string>
     <string name="answer_3_1">2008</string>
     <string name="answer_3_2">2009</string>
     <string name="answer_3_3">2010</string>
     <string name="count_true_answers">Количество правильных ответов:</string>
+    <string name="back">Назад</string>
 
 </resources>

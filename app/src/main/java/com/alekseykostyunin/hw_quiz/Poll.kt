@@ -27,7 +27,7 @@ class Poll : Fragment() {
         binding.toAnswer.setOnClickListener {
             val result = getResultAnswer()
             val bundle = Bundle()
-            bundle.putInt("result", result)
+            bundle.putInt(TAG_RESULT, result)
             findNavController().navigate(R.id.action_poll_to_result, bundle)
         }
         binding.toBack.setOnClickListener {
@@ -37,9 +37,9 @@ class Poll : Fragment() {
 
     private fun getResultAnswer(): Int {
         var result = 0
-        if (binding.radioGroup.checkedRadioButtonId == binding.radioButtonOne.id) result++
+        if (binding.radioGroup.checkedRadioButtonId == binding.radioButtonTree.id) result++
         if (binding.radioGroup2.checkedRadioButtonId == binding.radioButtonTwo2.id) result++
-        if (binding.radioGroup3.checkedRadioButtonId == binding.radioButtonTree3.id) result++
+        if (binding.radioGroup3.checkedRadioButtonId == binding.radioButtonTwo3.id) result++
         Log.i("TEST_result", result.toString())
         return result
     }
@@ -47,6 +47,10 @@ class Poll : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    companion object {
+        const val TAG_RESULT = "TAG_RESULT"
     }
 
 }

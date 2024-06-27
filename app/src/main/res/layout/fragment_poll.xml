@@ -81,19 +81,19 @@
                android:id="@+id/radioButtonOne2"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="@string/answer_1_1" />
+               android:text="@string/answer_2_1" />
 
            <RadioButton
                android:id="@+id/radioButtonTwo2"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="@string/answer_1_2" />
+               android:text="@string/answer_2_2" />
 
            <RadioButton
                android:id="@+id/radioButtonTree2"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="@string/answer_1_3" />
+               android:text="@string/answer_2_3" />
 
        </RadioGroup>
 
@@ -123,19 +123,19 @@
                android:id="@+id/radioButtonOne3"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="@string/answer_1_1" />
+               android:text="@string/answer_3_1" />
 
            <RadioButton
                android:id="@+id/radioButtonTwo3"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="@string/answer_1_2" />
+               android:text="@string/answer_3_2" />
 
            <RadioButton
                android:id="@+id/radioButtonTree3"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="@string/answer_1_3" />
+               android:text="@string/answer_3_3" />
 
        </RadioGroup>
 
@@ -144,7 +144,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_marginTop="25dp"
-           android:text="Назад"
+           android:text="@string/back"
            app:layout_constraintEnd_toStartOf="@+id/to_answer"
            app:layout_constraintStart_toStartOf="parent"
            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
